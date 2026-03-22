@@ -31,6 +31,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
   - [15. Versification \& Alignment](#15-versification--alignment)
   - [16. Translation \& Publishing Infrastructure](#16-translation--publishing-infrastructure)
   - [Contributing](#contributing)
+  - [License](#license)
 
 ---
 
@@ -40,8 +41,8 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 |---|---|---|---|---|
 | **SBLGNT** | Society of Biblical Literature Greek New Testament. High-quality critical text. Note the [license](http://sblgnt.com/license/) — imposes conditions on downstream works. | Custom (see license) | XML, OSIS, text | [morphgnt/sblgnt](https://github.com/morphgnt/sblgnt) |
 | **Nestle 1904** | Eberhard Nestle's 1904 GNT. Used in many treebanks. | Public Domain | CSV, XML | [biblicalhumanities/Nestle1904](https://github.com/biblicalhumanities/Nestle1904) |
-| **Byzantine Majority Text (Robinson-Pierpont RP2018)** | Robinson-Pierpont Byzantine Textform. Use RP2018 — RP2005 had accent errors. TEI-XML directly collatable with Münster INTF transcriptions via CollateX. | Public Domain | TEI-XML, CSV Unicode, Beta code | `git clone https://github.com/byztxt/byzantine-majority-text` — locally at `/Users/jonathan/github/byztxt/byzantine-majority-text/` |
-| **Antoniades 1904/1912 Patriarchal Edition** | Ecumenical Patriarchate edition with Robinson's morphological parsing and Strong's numbers. Narrower manuscript base than Robinson-Pierpont. | Public Domain | Beta code, Unicode | `git clone https://github.com/byztxt/greektext-antoniades` — locally at `/Users/jonathan/github/byztxt/greektext-antoniades/` |
+| **Byzantine Majority Text (Robinson-Pierpont RP2018)** | Robinson-Pierpont Byzantine Textform. Use RP2018 — RP2005 had accent errors. TEI-XML directly collatable with Münster INTF transcriptions via CollateX. | Public Domain | TEI-XML, CSV Unicode, Beta code | `git clone https://github.com/byztxt/byzantine-majority-text` |
+| **Antoniades 1904/1912 Patriarchal Edition** | Ecumenical Patriarchate edition with Robinson's morphological parsing and Strong's numbers. Narrower manuscript base than Robinson-Pierpont. | Public Domain | Beta code, Unicode | `git clone https://github.com/byztxt/greektext-antoniades` |
 | **CNTR Statistical Restoration (SR)** | World's first computer-generated GNT based on statistical analysis of earliest manuscripts. Alan Bunning / Center for New Testament Restoration. | CC BY 4.0 | Multiple | [Center-for-New-Testament-Restoration/SR](https://github.com/Center-for-New-Testament-Restoration/SR) |
 | **Westcott-Hort** | Classic critical text, as edited by Joshua Grauman. | Public Domain | Text | [scrolltag.com](http://scrolltag.com/westcott_and_hort.html) |
 
@@ -216,5 +217,11 @@ To suggest a dataset, [open an issue](https://github.com/nida-institute/awesome-
 This catalog focuses on resources that are: (a) freely available or clearly acquirable, (b) of genuine scholarly quality, and (c) useful for computational work. Survey data, informal concordances, and ecclesial-only resources are generally out of scope.
 
 ---
+
+## License
+
+This catalog is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Each dataset listed has its own license — see the License column for details.
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 _Maintained by the [NIDA Institute](https://github.com/nida-institute). Machine-readable version: [`resources.json`](resources.json)._
