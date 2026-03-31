@@ -14,6 +14,20 @@
     "notes": ""
   },
   {
+    "id": "bibleaquifer-sblgnt",
+    "name": "BibleAquifer SBLGNT (standard XML)",
+    "category": "Greek NT — Base Texts",
+    "description": "SBLGNT in standard XML format. The upstream source is owned by Logos and is not standard XML; BibleAquifer normalizes it.",
+    "formats": ["XML"],
+    "license": "Custom — see http://sblgnt.com/license/",
+    "github": "https://github.com/BibleAquifer/SBLGNT",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/BibleAquifer/SBLGNT"
+    ],
+    "notes": ""
+  },
+  {
     "id": "nestle1904",
     "name": "Nestle 1904",
     "category": "Greek NT — Base Texts",
@@ -126,18 +140,18 @@
     "notes": ""
   },
   {
-    "id": "macula-lxx",
-    "name": "Macula LXX",
+    "id": "rahlfs-hanhart",
+    "name": "Rahlfs-Hanhart LXX",
     "category": "Septuagint (LXX)",
-    "description": "Word-level morphology for the Septuagint, same schema as Macula Greek NT. Anchored to Macula node IDs.",
-    "formats": ["XML", "TSV"],
-    "license": "CC BY 4.0",
-    "github": "https://github.com/Clear-Bible/macula-greek",
+    "description": "The standard critical edition of the Septuagint. Deutsche Bibelgesellschaft. Not freely downloadable as a standalone file; available via Logos/Faithlife or paired with CATSS morphological data.",
+    "formats": ["text"],
+    "license": "See source",
+    "github": null,
     "url": null,
     "acquire": [
-      "git clone https://github.com/Clear-Bible/macula-greek"
+      "Via Logos/Faithlife or CATSS"
     ],
-    "notes": "LXX data is in the LXX folder of the macula-greek repo."
+    "notes": ""
   },
   {
     "id": "catss",
@@ -178,6 +192,20 @@
     "url": null,
     "acquire": [
       "git clone https://github.com/Clear-Bible/macula-hebrew"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bibleaquifer-wlc",
+    "name": "BibleAquifer Westminster Leningrad Codex (standard XML)",
+    "category": "Hebrew Bible — Base Texts & Morphology",
+    "description": "Westminster Leningrad Codex in standard XML format. BibleAquifer's normalization of the WLC base text.",
+    "formats": ["XML"],
+    "license": "See repo",
+    "github": "https://github.com/BibleAquifer/WestminsterLeningradCodex",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/BibleAquifer/WestminsterLeningradCodex"
     ],
     "notes": ""
   },
@@ -301,10 +329,10 @@
     "description": "Global Bible Initiative HPSG constituent grammar treebank, plus Lowfat transformation for XQuery-friendly access. Best for BaseX/XQuery work.",
     "formats": ["XML"],
     "license": "Open",
-    "github": "https://github.com/biblicalhumanities/greek-new-testament",
+    "github": "https://github.com/Clear-Bible/macula-greek",
     "url": null,
     "acquire": [
-      "git clone https://github.com/biblicalhumanities/greek-new-testament"
+      "git clone https://github.com/Clear-Bible/macula-greek"
     ],
     "notes": ""
   },
@@ -408,6 +436,20 @@
     "notes": ""
   },
   {
+    "id": "bdag",
+    "name": "BDAG",
+    "category": "Lexicons",
+    "description": "A Greek-English Lexicon of the New Testament and Other Early Christian Literature (Bauer-Danker-Arndt-Gingrich). The scholarly standard for NT Greek. Not freely available — reference only.",
+    "formats": ["print", "digital (Logos)"],
+    "license": "Commercial",
+    "github": null,
+    "url": null,
+    "acquire": [
+      "Publisher: University of Chicago Press"
+    ],
+    "notes": ""
+  },
+  {
     "id": "ubs-sdbh",
     "name": "UBS Semantic Dictionary of Biblical Hebrew (SDBH)",
     "category": "Semantic Domains & Thematic Resources",
@@ -439,14 +481,14 @@
     "id": "ubs-thematic-lexicons",
     "name": "UBS Thematic Lexicons (Flora, Fauna, Realia)",
     "category": "Semantic Domains & Thematic Resources",
-    "description": "Three lexicons for plants, animals, and man-made objects in the Bible. Issued under open license March 2025.",
-    "formats": ["JSON"],
-    "license": "Open",
+    "description": "Three lexicons for plants, animals, and man-made objects in the Bible. Adapted from UBS handbooks by Edward R. Hope (fauna) and Robert Koops (flora). Available in English, Chinese (Simplified), and Chinese (Traditional). Issued under open license 2025.",
+    "formats": ["XML"],
+    "license": "CC BY-SA 4.0",
     "github": "https://github.com/ubsicap/ubs-open-license",
     "url": null,
     "acquire": [
       "git clone https://github.com/ubsicap/ubs-open-license",
-      "Data in flora-fauna-realia/ subfolder"
+      "Data in flora-fauna-realia/XML/ subfolder"
     ],
     "notes": ""
   },
@@ -743,6 +785,66 @@
     "url": null,
     "acquire": [
       "git clone https://github.com/ubsicap/usx"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ubs-parallel-passages",
+    "name": "UBS Parallel Passages Database",
+    "category": "Versification & Alignment",
+    "description": "Word-level parallel passage alignment for the OT and NT, including OT quotes in the NT. Each word is scored 0–2 (no match, partial, full) against its counterpart(s). Underlies the Parallel Passages tool in Paratext.",
+    "formats": ["XML"],
+    "license": "CC BY-SA 4.0",
+    "github": "https://github.com/ubsicap/ubs-open-license",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/ubsicap/ubs-open-license",
+      "File: parallel passages/ParallelPassages.xml"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ubs-hottp",
+    "name": "HOTTP — Hebrew OT Text Project",
+    "category": "Manuscript Transcriptions & Textual Variants",
+    "description": "Preliminary and Interim Report on the Hebrew Old Testament Text Project. Concise text-critical analysis by a committee of senior Hebrew scholars, covering a large number of OT passages with textual variants. Each passage is assigned a quality rating (A–D) for the preferred reading. Formed the foundation of Barthélemy's Critique Textuelle de l'Ancien Testament. Available in English and French.",
+    "formats": ["XML"],
+    "license": "CC BY-SA 4.0",
+    "github": "https://github.com/ubsicap/ubs-open-license",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/ubsicap/ubs-open-license",
+      "File: HOTTP/HOTTP.XML"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ubs-marble-wlc-index",
+    "name": "MARBLE WLC Links Index",
+    "category": "Semantic Domains & Thematic Resources",
+    "description": "MARBLE (Multimedia And Reference Bible for Language and Exegesis) word-level linkage index for all 39 books of the WLC Hebrew Bible. Each word token is keyed to lexical (SDBH), thematic, image, map, textual cross-reference, article, and section resources. One file per OT book.",
+    "formats": ["JSON", "XML"],
+    "license": "CC BY-SA 4.0",
+    "github": "https://github.com/ubsicap/ubs-open-license",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/ubsicap/ubs-open-license",
+      "Data in index/WLC/ subfolder"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ubs-bible-routes",
+    "name": "UBS Bible Routes",
+    "category": "Geography & Places",
+    "description": "~200 files of geographic coordinates for routes linked to biblical narratives, created by Dr. Leen Ritmeyer for UBS. Designed to be overlaid on biblical maps. Covers journeys of biblical figures across both testaments.",
+    "formats": ["GeoJSON", "SVG"],
+    "license": "CC BY-SA 4.0",
+    "github": "https://github.com/ubsicap/ubs-open-license",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/ubsicap/ubs-open-license",
+      "Data in ubs-bible-routes/ subfolder"
     ],
     "notes": ""
   }

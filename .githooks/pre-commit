@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Pre-commit hook: regenerate README.md from resources.json when resources.json
+# is staged, then stage the updated README.md automatically.
+#
+# To install:
+#   git config core.hooksPath .githooks
+
+set -euo pipefail
+
+if git diff --cached --name-only | grep -q '^resources\.json$'; then
+    echo "resources.json staged — regenerating README.md…"
+    python3 scripts/generate_readme.py
+    git add README.md
+fi
