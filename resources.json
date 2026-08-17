@@ -104,10 +104,10 @@
     "description": "Alan Bunning's transcriptions of every extant Greek NT manuscript to 400 AD. Collation, apparatus, and viewer at greekcntr.org.",
     "formats": ["multiple"],
     "license": "See https://greekcntr.org/terms/index.html",
-    "github": "https://github.com/Center-for-New-Testament-Restoration/electronic-transcriptions",
+    "github": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
     "url": "https://greekcntr.org/",
     "acquire": [
-      "git clone https://github.com/Center-for-New-Testament-Restoration/electronic-transcriptions"
+      "git clone https://github.com/Center-for-New-Testament-Restoration/transcriptions"
     ],
     "notes": ""
   },
@@ -722,9 +722,9 @@
     "id": "copenhagen-versification",
     "name": "Copenhagen Alliance Versification Specification",
     "category": "Versification & Alignment",
-    "description": "Canonical versification schemes (ORG, ENG, and others) for cross-translation reference alignment.",
-    "formats": ["JSON"],
-    "license": "Open",
+    "description": "Canonical versification schemes (ORG, ENG, and others) for cross-translation reference alignment, plus \"versification sniffing\" to identify which scheme a text follows.",
+    "formats": ["JSON", "XML"],
+    "license": "Apache-2.0 (code) — see LICENSE.md for data terms",
     "github": "https://github.com/Copenhagen-Alliance/versification-specification",
     "url": null,
     "acquire": [
@@ -753,10 +753,10 @@
     "description": "Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext.",
     "formats": ["JSON schema"],
     "license": "Open",
-    "github": "https://github.com/bible-burrito/format",
+    "github": "https://github.com/bible-technology/scripture-burrito",
     "url": "https://docs.burrito.bible/",
     "acquire": [
-      "pip install pythonscripture"
+      "pip install scripture-burrito"
     ],
     "notes": ""
   },
@@ -847,5 +847,71 @@
       "Data in ubs-bible-routes/ subfolder"
     ],
     "notes": ""
+  },
+  {
+    "id": "scripture-burrito",
+    "name": "Scripture Burrito",
+    "category": "Standards",
+    "description": "Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG).",
+    "formats": ["JSON Schema", "YAML"],
+    "license": "MIT",
+    "github": "https://github.com/bible-technology/scripture-burrito",
+    "url": "https://docs.burrito.bible/",
+    "acquire": [],
+    "notes": ""
+  },
+  {
+    "id": "usfm-3-1",
+    "name": "USFM 3.1",
+    "category": "Standards",
+    "description": "Unified Standard Format Markers 3.1 — the dominant plain-text markup language for Scripture translation. Version 3.1 adds extended attributes, milestones, and improved word-level markup over earlier versions. Do not use USFM 2.x for new work.",
+    "formats": ["USFM"],
+    "license": "MIT",
+    "github": "https://github.com/usfm-bible/tcdocs",
+    "url": "https://docs.usfm.bible/usfm/3.1.1/index.html",
+    "acquire": [],
+    "notes": "Spec only — no data. Use USFM 3.1+; earlier versions lack milestone and extended-attribute support."
+  },
+  {
+    "id": "etcbc-bhsa-syntax-trees",
+    "name": "ETCBC BHSa Syntax Trees",
+    "category": "Treebanks",
+    "description": "Hebrew Bible syntax trees generated from the ETCBC BHSA data via Text-Fabric. A hierarchical XML alternative to Macula Hebrew for clause and phrase structure.",
+    "formats": ["XML"],
+    "license": "No license file — ask before redistributing",
+    "github": "https://github.com/ryderwishart/hebrew-syntax-trees",
+    "url": "",
+    "acquire": [
+      "git clone https://github.com/ryderwishart/hebrew-syntax-trees"
+    ],
+    "notes": "Last updated 2023-03-20."
+  },
+  {
+    "id": "bdb-hebrewlexicon",
+    "name": "BDB (OpenScriptures HebrewLexicon)",
+    "category": "Lexicons",
+    "description": "Brown-Driver-Briggs Hebrew and English Lexicon, marked up in XML with links to Strong's numbers and an augmented index. The standard historical Hebrew lexicon.",
+    "formats": ["XML"],
+    "license": "No license file — see repo",
+    "github": "https://github.com/openscriptures/HebrewLexicon",
+    "url": "",
+    "acquire": [
+      "git clone https://github.com/openscriptures/HebrewLexicon"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bsb",
+    "name": "Berean Standard Bible (BSB)",
+    "category": "English Translations",
+    "description": "Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\\\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide.",
+    "formats": ["USFM"],
+    "license": "Public domain (text); repository has no license file",
+    "github": "https://github.com/usfm-bible/examples.bsb",
+    "url": "https://bereanbible.com/",
+    "acquire": [
+      "git clone https://github.com/usfm-bible/examples.bsb"
+    ],
+    "notes": "Section headings (\\\\s1) give editorial pericope boundaries for the whole Bible."
   }
 ]
