@@ -208,7 +208,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Scripture Burrito** | Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext. | MIT | JSON schema | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · `pip install scripture-burrito` |
+| **Scripture Burrito** | Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext. | MIT (code, schema); CC BY-SA 4.0 (docs) | JSON schema | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · `pip install scripture-burrito` |
 | **Paratext USFM/USX (usfmtc)** | Access local Paratext projects programmatically via usfmtc (Martin Hosken / SIL). | MIT (tools) | USFM, USX | [pypi.org](https://pypi.org/project/usfmtc/) · `pip install usfmtc` |
 | **USX 3.1 Schema** | XML serialization of USFM 3.1 maintained by United Bible Societies. | Open | XML schema | [ubsicap/usx](https://github.com/ubsicap/usx) |
 
@@ -218,7 +218,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Scripture Burrito** | Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG). | MIT | JSON Schema, YAML | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) |
+| **Scripture Burrito** | Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG). | MIT (code, schema); CC BY-SA 4.0 (docs) | JSON Schema, YAML | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) |
 | **USFM 3.1** | Unified Standard Format Markers 3.1 — the dominant plain-text markup language for Scripture translation. Version 3.1 adds extended attributes, milestones, and improved word-level markup over earlier versions. Do not use USFM 2.x for new work. | MIT | USFM | [usfm-bible/tcdocs](https://github.com/usfm-bible/tcdocs) |
 
 ---

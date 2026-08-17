@@ -752,7 +752,7 @@
     "category": "Translation & Publishing Infrastructure",
     "description": "Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext.",
     "formats": ["JSON schema"],
-    "license": "MIT",
+    "license": "MIT (code, schema); CC BY-SA 4.0 (docs)",
     "github": "https://github.com/bible-technology/scripture-burrito",
     "url": "https://docs.burrito.bible/",
     "acquire": [
@@ -854,7 +854,7 @@
     "category": "Standards",
     "description": "Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG).",
     "formats": ["JSON Schema", "YAML"],
-    "license": "MIT",
+    "license": "MIT (code, schema); CC BY-SA 4.0 (docs)",
     "github": "https://github.com/bible-technology/scripture-burrito",
     "url": "https://docs.burrito.bible/",
     "acquire": [],
