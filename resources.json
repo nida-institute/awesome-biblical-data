@@ -752,7 +752,7 @@
     "category": "Translation & Publishing Infrastructure",
     "description": "Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext.",
     "formats": ["JSON schema"],
-    "license": "Open",
+    "license": "MIT",
     "github": "https://github.com/bible-technology/scripture-burrito",
     "url": "https://docs.burrito.bible/",
     "acquire": [

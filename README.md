@@ -105,8 +105,8 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 |---|---|---|---|---|
 | **GBI Treebank / Lowfat Trees (Nestle1904 & SBLGNT)** | Global Bible Initiative HPSG constituent grammar treebank, plus Lowfat transformation for XQuery-friendly access. Best for BaseX/XQuery work. | Open | XML | [Clear-Bible/macula-greek](https://github.com/Clear-Bible/macula-greek) |
 | **PROIEL Treebank** | High-quality dependency trees for Tischendorf GNT. Part of a parallel corpus spanning Greek, Armenian, Gothic, Old Church Slavonic, Latin. | CC BY-NC-SA 4.0 | XML | [proiel/proiel-treebank](https://github.com/proiel/proiel-treebank) |
-
 | **ETCBC BHSa Syntax Trees** | Hebrew Bible syntax trees generated from the ETCBC BHSA data via Text-Fabric. A hierarchical XML alternative to Macula Hebrew for clause and phrase structure. | No license file — ask before redistributing | XML | [ryderwishart/hebrew-syntax-trees](https://github.com/ryderwishart/hebrew-syntax-trees) |
+
 ---
 
 ## 7. Discourse Analysis
@@ -127,8 +127,8 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 | **Mounce Concise Dictionary** | Mounce's Concise Greek-English Dictionary of Biblical Greek. | CC BY-SA | JSON | [jcuenod/dictionary](https://github.com/jcuenod/dictionary) |
 | **Strong's Dictionary** | Greek and Hebrew Strong's numbers with definitions. Widely used for cross-reference. | Public Domain | XML | [openscriptures/strongs](https://github.com/openscriptures/strongs) |
 | **BDAG** | A Greek-English Lexicon of the New Testament and Other Early Christian Literature (Bauer-Danker-Arndt-Gingrich). The scholarly standard for NT Greek. Not freely available — reference only. | Commercial | print, digital (Logos) | `Publisher: University of Chicago Press` |
-
 | **BDB (OpenScriptures HebrewLexicon)** | Brown-Driver-Briggs Hebrew and English Lexicon, marked up in XML with links to Strong's numbers and an augmented index. The standard historical Hebrew lexicon. | No license file — see repo | XML | [openscriptures/HebrewLexicon](https://github.com/openscriptures/HebrewLexicon) |
+
 ---
 
 ## 9. Semantic Domains & Thematic Resources
@@ -208,7 +208,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Scripture Burrito** | Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext. | MIT | JSON schema | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · [docs.burrito.bible](https://docs.burrito.bible/) · `pip install scripture-burrito` |
+| **Scripture Burrito** | Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext. | MIT | JSON schema | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · `pip install scripture-burrito` |
 | **Paratext USFM/USX (usfmtc)** | Access local Paratext projects programmatically via usfmtc (Martin Hosken / SIL). | MIT (tools) | USFM, USX | [pypi.org](https://pypi.org/project/usfmtc/) · `pip install usfmtc` |
 | **USX 3.1 Schema** | XML serialization of USFM 3.1 maintained by United Bible Societies. | Open | XML schema | [ubsicap/usx](https://github.com/ubsicap/usx) |
 
@@ -220,14 +220,14 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 |---|---|---|---|---|
 | **Scripture Burrito** | Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG). | MIT | JSON Schema, YAML | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) |
 | **USFM 3.1** | Unified Standard Format Markers 3.1 — the dominant plain-text markup language for Scripture translation. Version 3.1 adds extended attributes, milestones, and improved word-level markup over earlier versions. Do not use USFM 2.x for new work. | MIT | USFM | [usfm-bible/tcdocs](https://github.com/usfm-bible/tcdocs) |
+
 ---
 
 ## 18. English Translations
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Berean Standard Bible (BSB)** | Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with `\s1` section headings — editorial pericope boundaries for all 66 books, which few free texts provide. | Public domain (text); repository has no license file | USFM | [usfm-bible/examples.bsb](https://github.com/usfm-bible/examples.bsb) · [bereanbible.com](https://bereanbible.com/) |
-
+| **Berean Standard Bible (BSB)** | Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide. | Public domain (text); repository has no license file | USFM | [usfm-bible/examples.bsb](https://github.com/usfm-bible/examples.bsb) |
 ---
 
 ## Contributing
