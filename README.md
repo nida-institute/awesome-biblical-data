@@ -25,16 +25,18 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
   - [6. Treebanks](#6-treebanks)
   - [7. Discourse Analysis](#7-discourse-analysis)
   - [8. Lexicons](#8-lexicons)
-  - [9. Semantic Domains \& Thematic Resources](#9-semantic-domains-thematic-resources)
-  - [10. Entity Annotation](#10-entity-annotation)
-  - [11. Geography \& Places](#11-geography-places)
-  - [12. Hellenistic \& Patristic Corpora](#12-hellenistic-patristic-corpora)
-  - [13. Papyri \& Inscriptions](#13-papyri-inscriptions)
-  - [14. Jewish Texts](#14-jewish-texts)
-  - [15. Versification \& Alignment](#15-versification-alignment)
-  - [16. Translation \& Publishing Infrastructure](#16-translation-publishing-infrastructure)
-  - [17. Standards](#17-standards)
-  - [18. English Translations](#18-english-translations)
+  - [9. Bible Dictionaries \& Encyclopedias](#9-bible-dictionaries-encyclopedias)
+  - [10. Study Notes \& Commentary](#10-study-notes-commentary)
+  - [11. Semantic Domains \& Thematic Resources](#11-semantic-domains-thematic-resources)
+  - [12. Entity Annotation](#12-entity-annotation)
+  - [13. Geography \& Places](#13-geography-places)
+  - [14. Hellenistic \& Patristic Corpora](#14-hellenistic-patristic-corpora)
+  - [15. Papyri \& Inscriptions](#15-papyri-inscriptions)
+  - [16. Jewish Texts](#16-jewish-texts)
+  - [17. Versification \& Alignment](#17-versification-alignment)
+  - [18. Translation \& Publishing Infrastructure](#18-translation-publishing-infrastructure)
+  - [19. Standards](#19-standards)
+  - [20. English Translations](#20-english-translations)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -51,6 +53,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 | **Antoniades 1904/1912 Patriarchal Edition** | Ecumenical Patriarchate edition with Robinson's morphological parsing and Strong's numbers. Narrower manuscript base than Robinson-Pierpont. | Public Domain | Beta code, Unicode | [byztxt/greektext-antoniades](https://github.com/byztxt/greektext-antoniades) |
 | **CNTR Statistical Restoration (SR)** | World's first computer-generated GNT based on statistical analysis of the earliest manuscripts. Alan Bunning / Center for New Testament Restoration. | CC BY 4.0 | multiple | [Center-for-New-Testament-Restoration/SR](https://github.com/Center-for-New-Testament-Restoration/SR) |
 | **Westcott-Hort** | Classic critical text, as edited by Joshua Grauman. | Public Domain | text | [scrolltag.com](http://scrolltag.com/westcott_and_hort.html) · `Download from http://scrolltag.com/westcott_and_hort.html` |
+| **Berean Greek Bible NT** | The Greek New Testament text underlying the Berean translations. | Public domain | DOCX, PDF | [greekbible.org](https://greekbible.org/) · `Download from https://berean.bible/downloads.htm` |
 
 ---
 
@@ -58,7 +61,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **CNTR Electronic Transcriptions** | Alan Bunning's transcriptions of every extant Greek NT manuscript to 400 AD. Collation, apparatus, and viewer at greekcntr.org. | See https://greekcntr.org/terms/index.html | multiple | [Center-for-New-Testament-Restoration/transcriptions](https://github.com/Center-for-New-Testament-Restoration/transcriptions) |
+| **CNTR Electronic Transcriptions** | Alan Bunning's transcriptions of every extant Greek NT manuscript to 400 AD, plus selected modern critical texts. Encoded to the Manuscript Encoding Specification (MES) and organised by witness class, with an ANTLR grammar defining the markup. Collation, apparatus, and viewer at greekcntr.org. | CC BY-SA 4.0 | MES, text | [Center-for-New-Testament-Restoration/transcriptions](https://github.com/Center-for-New-Testament-Restoration/transcriptions) |
 | **Codex Sinaiticus** | Complete digital edition of Codex Sinaiticus (4th c.) with TEI XML transcription download. | See site | TEI XML | [www.codexsinaiticus.org](https://www.codexsinaiticus.org/en/) · `Download from https://codexsinaiticus.org/en/project/transcription_download.aspx` |
 | **Amsterdam Database of NT Conjectural Emendation** | Scholarly conjectural emendations to the Greek NT with attribution. | Open | SQL, web | [ntvmr.uni-muenster.de](http://ntvmr.uni-muenster.de/nt-conjectures-attribution) · `SQL scripts at http://ntvmr.uni-muenster.de/community/vmr/api/projects/ntconjectures/admin/sql/scripts/` |
 | **HOTTP — Hebrew OT Text Project** | Preliminary and Interim Report on the Hebrew Old Testament Text Project. Concise text-critical analysis by a committee of senior Hebrew scholars, covering a large number of OT passages with textual variants. Each passage is assigned a quality rating (A–D) for the preferred reading. Formed the foundation of Barthélemy's Critique Textuelle de l'Ancien Testament. Available in English and French. | CC BY-SA 4.0 | XML | [ubsicap/ubs-open-license](https://github.com/ubsicap/ubs-open-license) · `File: HOTTP/HOTTP.XML` |
@@ -131,7 +134,23 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 9. Semantic Domains & Thematic Resources
+## 9. Bible Dictionaries & Encyclopedias
+
+| Name | Description | License | Format | Get It |
+|---|---|---|---|---|
+| **Tyndale Open Bible Dictionary** | Dictionary articles on the significant people, places, and concepts in the Bible, on the cultural context of scripture, and on important theological terms. Addressed by topic rather than by passage. | CC BY-SA 4.0 | ZIP | [tyndaleopenresources.com](https://tyndaleopenresources.com/) · `Download from https://tyndaleopenresources.com/` |
+
+---
+
+## 10. Study Notes & Commentary
+
+| Name | Description | License | Format | Get It |
+|---|---|---|---|---|
+| **Tyndale Open Study Notes** | Book introductions, profiles, theme articles, and verse-level study notes explaining the meaning and background of the biblical text in modern English. Addressed by passage. | CC BY-SA 4.0 | ZIP | [tyndaleopenresources.com](https://tyndaleopenresources.com/) · `Download from https://tyndaleopenresources.com/` |
+
+---
+
+## 11. Semantic Domains & Thematic Resources
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -144,7 +163,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 10. Entity Annotation
+## 12. Entity Annotation
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -154,7 +173,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 11. Geography & Places
+## 13. Geography & Places
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -163,7 +182,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 12. Hellenistic & Patristic Corpora
+## 14. Hellenistic & Patristic Corpora
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -175,7 +194,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 13. Papyri & Inscriptions
+## 15. Papyri & Inscriptions
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -186,7 +205,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 14. Jewish Texts
+## 16. Jewish Texts
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
@@ -194,40 +213,42 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 
 ---
 
-## 15. Versification & Alignment
+## 17. Versification & Alignment
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
 | **Copenhagen Alliance Versification Specification** | Canonical versification schemes (ORG, ENG, and others) for cross-translation reference alignment, plus "versification sniffing" to identify which scheme a text follows. | Apache-2.0 (code) — see LICENSE.md for data terms | JSON, XML | [Copenhagen-Alliance/versification-specification](https://github.com/Copenhagen-Alliance/versification-specification) |
 | **Clear-Bible Alignments (Biblica)** | Word-level alignment of translations to Macula Hebrew/Greek. Used by ACAI for Markdown visualization. | Open | JSON | [Clear-Bible/Alignments](https://github.com/Clear-Bible/Alignments) |
 | **UBS Parallel Passages Database** | Word-level parallel passage alignment for the OT and NT, including OT quotes in the NT. Each word is scored 0–2 (no match, partial, full) against its counterpart(s). Underlies the Parallel Passages tool in Paratext. | CC BY-SA 4.0 | XML | [ubsicap/ubs-open-license](https://github.com/ubsicap/ubs-open-license) · `File: parallel passages/ParallelPassages.xml` |
+| **BSB Translation Tables** | Word-level translation tables for the Berean Standard Bible, linking the English text to its underlying Greek and Hebrew. | Public domain | TSV, XLSX | [berean.bible](https://berean.bible/downloads.htm) · `Download from https://berean.bible/downloads.htm` |
 
 ---
 
-## 16. Translation & Publishing Infrastructure
+## 18. Translation & Publishing Infrastructure
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Scripture Burrito** | Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext. | MIT (code, schema); CC BY-SA 4.0 (docs) | JSON schema | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · `pip install scripture-burrito` |
 | **Paratext USFM/USX (usfmtc)** | Access local Paratext projects programmatically via usfmtc (Martin Hosken / SIL). | MIT (tools) | USFM, USX | [pypi.org](https://pypi.org/project/usfmtc/) · `pip install usfmtc` |
 | **USX 3.1 Schema** | XML serialization of USFM 3.1 maintained by United Bible Societies. | Open | XML schema | [ubsicap/usx](https://github.com/ubsicap/usx) |
 
 ---
 
-## 17. Standards
+## 19. Standards
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Scripture Burrito** | Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG). | MIT (code, schema); CC BY-SA 4.0 (docs) | JSON Schema, YAML | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) |
+| **Scripture Burrito** | Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools, and the exchange format for Paratext. Maintained by the Bible Technology Group (BTG). | MIT (code, schema); CC BY-SA 4.0 (docs) | JSON Schema, YAML | [bible-technology/scripture-burrito](https://github.com/bible-technology/scripture-burrito) · `pip install scripture-burrito` |
 | **USFM 3.1** | Unified Standard Format Markers 3.1 — the dominant plain-text markup language for Scripture translation. Version 3.1 adds extended attributes, milestones, and improved word-level markup over earlier versions. Do not use USFM 2.x for new work. | MIT | USFM | [usfm-bible/tcdocs](https://github.com/usfm-bible/tcdocs) |
 
 ---
 
-## 18. English Translations
+## 20. English Translations
 
 | Name | Description | License | Format | Get It |
 |---|---|---|---|---|
-| **Berean Standard Bible (BSB)** | Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide. | Public domain (text); repository has no license file | USFM | [usfm-bible/examples.bsb](https://github.com/usfm-bible/examples.bsb) |
+| **Berean Standard Bible (BSB)** | Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide. | Public domain | USFM, USJ, USX, TXT | [berean.bible](https://berean.bible/downloads.htm) · `Download from https://berean.bible/downloads.htm` |
+| **Berean Reader's Bible** | A reader's edition of the Berean text, set without verse numbers for continuous reading. | Public domain | TXT, XLSX, DOCX, PDF | [readersbible.com](https://readersbible.com/) · `Download from https://berean.bible/downloads.htm` |
+| **Berean Literal Bible NT** | A literal English rendering of the Greek New Testament, following Greek word order closely. Useful as a gloss layer beside the original. | Public domain | TXT, XLSX, DOCX, PDF | [literalbible.com](https://literalbible.com/) · `Download from https://berean.bible/downloads.htm` |
 ---
 
 ## Contributing

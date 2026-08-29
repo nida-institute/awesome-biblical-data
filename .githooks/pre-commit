@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
-# Pre-commit hook: regenerate README.md from resources.json when resources.json
-# is staged, then stage the updated README.md automatically.
+# Pre-commit hook: validate resources.json, then regenerate README.md from it and
+# stage the updated README.md automatically.
+#
+# Validation runs first and blocks the commit: a duplicate id or a malformed entry
+# should never reach the file, and generating a README from a broken catalog would
+# either fail confusingly or quietly publish the defect.
 #
 # To install:
 #   git config core.hooksPath .githooks
@@ -8,7 +12,9 @@
 set -euo pipefail
 
 if git diff --cached --name-only | grep -q '^resources\.json$'; then
-    echo "resources.json staged — regenerating README.md…"
+    echo "resources.json staged — validating…"
+    python3 scripts/validate_resources.py
+    echo "regenerating README.md…"
     python3 scripts/generate_readme.py
     git add README.md
 fi

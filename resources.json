@@ -101,15 +101,15 @@
     "id": "cntr-transcriptions",
     "name": "CNTR Electronic Transcriptions",
     "category": "Manuscript Transcriptions & Textual Variants",
-    "description": "Alan Bunning's transcriptions of every extant Greek NT manuscript to 400 AD. Collation, apparatus, and viewer at greekcntr.org.",
-    "formats": ["multiple"],
-    "license": "See https://greekcntr.org/terms/index.html",
+    "description": "Alan Bunning's transcriptions of every extant Greek NT manuscript to 400 AD, plus selected modern critical texts. Encoded to the Manuscript Encoding Specification (MES) and organised by witness class, with an ANTLR grammar defining the markup. Collation, apparatus, and viewer at greekcntr.org.",
+    "formats": ["MES", "text"],
+    "license": "CC BY-SA 4.0",
     "github": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
     "url": "https://greekcntr.org/",
     "acquire": [
       "git clone https://github.com/Center-for-New-Testament-Restoration/transcriptions"
     ],
-    "notes": ""
+    "notes": "The repository states CC BY-SA 4.0; site terms at https://greekcntr.org/terms/index.html. Attribution to Alan Bunning and the Center for New Testament Restoration is required, and derivatives must carry the same licence."
   },
   {
     "id": "codex-sinaiticus",
@@ -193,6 +193,18 @@
     "acquire": [
       "git clone https://github.com/Clear-Bible/macula-hebrew"
     ],
+    "provides": [
+      {
+        "id": "WLC",
+        "name": "Westminster Leningrad Codex",
+        "language": "Hebrew",
+        "canon": "OT",
+        "kind": "tsv",
+        "path": "WLC/tsv/macula-hebrew.tsv",
+        "versification": "org",
+        "versification_why": "PSA 51 runs to 21 verses and Malachi has 3 chapters — both `org`, not `eng`."
+      }
+    ],
     "notes": ""
   },
   {
@@ -263,6 +275,18 @@
     "url": null,
     "acquire": [
       "git clone https://github.com/Clear-Bible/macula-greek"
+    ],
+    "provides": [
+      {
+        "id": "SBLGNT",
+        "name": "SBL Greek New Testament",
+        "language": "Greek",
+        "canon": "NT",
+        "kind": "tsv",
+        "path": "SBLGNT/tsv/macula-greek-SBLGNT.tsv",
+        "versification": "org",
+        "versification_why": "2CO 13 has 13 verses and 3JN 15 exists — both `org`, not `eng`."
+      }
     ],
     "notes": ""
   },
@@ -446,6 +470,36 @@
     "url": null,
     "acquire": [
       "Publisher: University of Chicago Press"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tyndale-open-bible-dictionary",
+    "name": "Tyndale Open Bible Dictionary",
+    "category": "Bible Dictionaries & Encyclopedias",
+    "description": "Dictionary articles on the significant people, places, and concepts in the Bible, on the cultural context of scripture, and on important theological terms. Addressed by topic rather than by passage.",
+    "formats": ["ZIP"],
+    "license": "CC BY-SA 4.0",
+    "github": null,
+    "url": "https://tyndaleopenresources.com/",
+    "download": "https://tyndaleopenresources.com/wp-content/themes/tyndale-openresources/files/TyndaleOpenBibleDictionary.zip",
+    "acquire": [
+      "Download from https://tyndaleopenresources.com/"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tyndale-open-study-notes",
+    "name": "Tyndale Open Study Notes",
+    "category": "Study Notes & Commentary",
+    "description": "Book introductions, profiles, theme articles, and verse-level study notes explaining the meaning and background of the biblical text in modern English. Addressed by passage.",
+    "formats": ["ZIP"],
+    "license": "CC BY-SA 4.0",
+    "github": null,
+    "url": "https://tyndaleopenresources.com/",
+    "download": "https://tyndaleopenresources.com/wp-content/themes/tyndale-openresources/files/tyndale_open-studynotes.zip",
+    "acquire": [
+      "Download from https://tyndaleopenresources.com/"
     ],
     "notes": ""
   },
@@ -747,20 +801,6 @@
     "notes": ""
   },
   {
-    "id": "scripture-burrito",
-    "name": "Scripture Burrito",
-    "category": "Translation & Publishing Infrastructure",
-    "description": "Standard for packaging and exchanging Scripture-related data. Exchange format for Paratext.",
-    "formats": ["JSON schema"],
-    "license": "MIT (code, schema); CC BY-SA 4.0 (docs)",
-    "github": "https://github.com/bible-technology/scripture-burrito",
-    "url": "https://docs.burrito.bible/",
-    "acquire": [
-      "pip install scripture-burrito"
-    ],
-    "notes": ""
-  },
-  {
     "id": "usfmtc",
     "name": "Paratext USFM/USX (usfmtc)",
     "category": "Translation & Publishing Infrastructure",
@@ -852,12 +892,14 @@
     "id": "scripture-burrito",
     "name": "Scripture Burrito",
     "category": "Standards",
-    "description": "Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools. Maintained by the Bible Technology Group (BTG).",
+    "description": "Interoperability standard for packaging, identifying, and exchanging Scripture-related digital resources. Defines a container format (metadata + content files) used by translation and publishing tools, and the exchange format for Paratext. Maintained by the Bible Technology Group (BTG).",
     "formats": ["JSON Schema", "YAML"],
     "license": "MIT (code, schema); CC BY-SA 4.0 (docs)",
     "github": "https://github.com/bible-technology/scripture-burrito",
     "url": "https://docs.burrito.bible/",
-    "acquire": [],
+    "acquire": [
+      "pip install scripture-burrito"
+    ],
     "notes": ""
   },
   {
@@ -880,7 +922,7 @@
     "formats": ["XML"],
     "license": "No license file — ask before redistributing",
     "github": "https://github.com/ryderwishart/hebrew-syntax-trees",
-    "url": "",
+    "url": null,
     "acquire": [
       "git clone https://github.com/ryderwishart/hebrew-syntax-trees"
     ],
@@ -894,7 +936,7 @@
     "formats": ["XML"],
     "license": "No license file — see repo",
     "github": "https://github.com/openscriptures/HebrewLexicon",
-    "url": "",
+    "url": null,
     "acquire": [
       "git clone https://github.com/openscriptures/HebrewLexicon"
     ],
@@ -905,13 +947,86 @@
     "name": "Berean Standard Bible (BSB)",
     "category": "English Translations",
     "description": "Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\\\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide.",
-    "formats": ["USFM"],
-    "license": "Public domain (text); repository has no license file",
-    "github": "https://github.com/usfm-bible/examples.bsb",
-    "url": "https://bereanbible.com/",
+    "formats": ["USFM", "USJ", "USX", "TXT"],
+    "license": "Public domain",
+    "github": null,
+    "url": "https://berean.bible/downloads.htm",
+    "download": "https://bereanbible.com/bsb_usfm.zip",
     "acquire": [
-      "git clone https://github.com/usfm-bible/examples.bsb"
+      "Download from https://berean.bible/downloads.htm"
     ],
-    "notes": "Section headings (\\\\s1) give editorial pericope boundaries for the whole Bible."
+    "provides": [
+      {
+        "id": "BSB",
+        "name": "Berean Standard Bible",
+        "language": "English",
+        "canon": "OT+NT",
+        "kind": "usfm",
+        "path": "bsb_usfm",
+        "versification": "eng",
+        "versification_why": "An English translation with English numbering."
+      }
+    ],
+    "notes": "Officially placed in the public domain on 30 April 2023 (https://berean.bible/licensing.htm); the downloads page footer still carries an older all-rights-reserved line. The official USFM release is USFM 3.1, one file per book, with \\\\mt1/\\\\mt2 titles, \\\\s1 section headings, \\\\p paragraphs, \\\\q1 poetry lines and full \\\\f footnote markup — the editorial structure `print` output needs. Prefer it to the github.com/usfm-bible/examples.bsb mirror, which omits the \\\\id line in its Ecclesiastes file, so a tool loading that mirror book by book silently ends up without Ecclesiastes (usfm-bible/examples.bsb#7). USJ and USX releases of the same text are on the same page; the USJ is well-formed USJ 3.1 but its verse nodes carry neither sid nor eid."
+  },
+  {
+    "id": "bsb-translation-tables",
+    "name": "BSB Translation Tables",
+    "category": "Versification & Alignment",
+    "description": "Word-level translation tables for the Berean Standard Bible, linking the English text to its underlying Greek and Hebrew.",
+    "formats": ["TSV", "XLSX"],
+    "license": "Public domain",
+    "github": null,
+    "url": "https://berean.bible/downloads.htm",
+    "download": "https://bereanbible.com/bsb_tables.tsv",
+    "acquire": [
+      "Download from https://berean.bible/downloads.htm"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "berean-readers-bible",
+    "name": "Berean Reader's Bible",
+    "category": "English Translations",
+    "description": "A reader's edition of the Berean text, set without verse numbers for continuous reading.",
+    "formats": ["TXT", "XLSX", "DOCX", "PDF"],
+    "license": "Public domain",
+    "github": null,
+    "url": "https://readersbible.com/",
+    "download": "https://readersbible.com/brb.txt",
+    "acquire": [
+      "Download from https://berean.bible/downloads.htm"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "berean-literal-bible",
+    "name": "Berean Literal Bible NT",
+    "category": "English Translations",
+    "description": "A literal English rendering of the Greek New Testament, following Greek word order closely. Useful as a gloss layer beside the original.",
+    "formats": ["TXT", "XLSX", "DOCX", "PDF"],
+    "license": "Public domain",
+    "github": null,
+    "url": "https://literalbible.com/",
+    "download": "https://literalbible.com/blb.txt",
+    "acquire": [
+      "Download from https://berean.bible/downloads.htm"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "berean-greek-bible",
+    "name": "Berean Greek Bible NT",
+    "category": "Greek NT — Base Texts",
+    "description": "The Greek New Testament text underlying the Berean translations.",
+    "formats": ["DOCX", "PDF"],
+    "license": "Public domain",
+    "github": null,
+    "url": "https://greekbible.org/",
+    "download": "https://greekbible.org/bgb.docx",
+    "acquire": [
+      "Download from https://berean.bible/downloads.htm"
+    ],
+    "notes": "Published only as DOCX and PDF — there is no plain-text or structured release, so machine use means extracting from the DOCX."
   }
 ]
