@@ -4,13 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Key workflow rule
 
-**Never edit `README.md` directly.** It is auto-generated from `resources.json`. After editing `resources.json`, regenerate it:
+**`resources.json` is the only file a human edits. Never edit `README.md` directly** — it is generated from `resources.json`. After editing `resources.json`, validate it and regenerate:
 
 ```bash
+python3 scripts/validate_resources.py
 python3 scripts/generate_readme.py
 ```
 
-The pre-commit hook does this automatically when `resources.json` is staged. Install it once per clone:
+**Validation runs first and blocks.** `validate_resources.py` refuses a duplicate `id`, a missing required field (`id`, `name`, `category`, `description`, `license`), an `id` that is not a lower-case slug, an unknown field, a `formats`/`acquire` that is not a list, and a `github`/`url`/`download` that is not a URL or `null`. Generating a README from a broken catalog would either fail confusingly or quietly publish the defect.
+
+The pre-commit hook runs both — validating, then regenerating `README.md` and staging it — when `resources.json` is staged. Install it once per clone:
 
 ```bash
 git config core.hooksPath .githooks
@@ -42,5 +45,9 @@ Each entry:
 | `acquire` | string[] | CLI commands shown as inline code in Get It column |
 | `notes` | string | Internal notes, not rendered |
 | `get_it` | string | Optional — overrides the auto-rendered Get It cell with hand-crafted Markdown |
+| `download` | string \| null | Optional — direct download URL for the resource itself |
+| `provides` | object[] | Optional — what a tool can open without a human reading the resource's README. Each entry needs `id`, `name`, `kind`, `path`, `versification`, `canon`, `language`; `path` is relative and must stay inside the download, and `provides` ids are unique across the whole catalog |
+
+`validate_resources.py` holds the authoritative field list in `KNOWN_FIELDS`; a key outside it is rejected as a typo.
 
 The **Get It** column is auto-rendered: GitHub link (or `url` link if no `github`), then each `acquire` command as inline code, joined by ` · `. Set `get_it` to override entirely (e.g. for multi-link or complex acquisition instructions).

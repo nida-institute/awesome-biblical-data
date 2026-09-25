@@ -37,6 +37,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
   - [18. Translation \& Publishing Infrastructure](#18-translation-publishing-infrastructure)
   - [19. Standards](#19-standards)
   - [20. English Translations](#20-english-translations)
+  - [21. Images \& Maps](#21-images-maps)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -130,7 +131,8 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 | **Mounce Concise Dictionary** | Mounce's Concise Greek-English Dictionary of Biblical Greek. | CC BY-SA | JSON | [jcuenod/dictionary](https://github.com/jcuenod/dictionary) |
 | **Strong's Dictionary** | Greek and Hebrew Strong's numbers with definitions. Widely used for cross-reference. | Public Domain | XML | [openscriptures/strongs](https://github.com/openscriptures/strongs) |
 | **BDAG** | A Greek-English Lexicon of the New Testament and Other Early Christian Literature (Bauer-Danker-Arndt-Gingrich). The scholarly standard for NT Greek. Not freely available — reference only. | Commercial | print, digital (Logos) | `Publisher: University of Chicago Press` |
-| **BDB (OpenScriptures HebrewLexicon)** | Brown-Driver-Briggs Hebrew and English Lexicon, marked up in XML with links to Strong's numbers and an augmented index. The standard historical Hebrew lexicon. | No license file — see repo | XML | [openscriptures/HebrewLexicon](https://github.com/openscriptures/HebrewLexicon) |
+| **BDB Hebrew Lexicon (BibleAquifer edition)** | Brown-Driver-Briggs Hebrew Lexicon as an Aquifer resource, with resource-level and article-level metadata beside the content. Derived from three open digitizations: James Cuénod's HTML edition as the primary text, OpenScriptures for root-section identification and article alignment, and the unfoldingWord/SIL edition for Unicode transcriptions of Arabic, Syriac, Ethiopic, Persian and Samaritan words that were images in the primary source. Internal vide cross-references are resolved and linked, Bible references carry machine-readable data-verses encoding, and abbreviations are tagged against the lexicon's own abbreviation list. | CC0 — public domain | JSON, Markdown, DOCX, PDF | [BibleAquifer/BDBHebrewLexicon](https://github.com/BibleAquifer/BDBHebrewLexicon) |
+| **BDB Aramaic Lexicon (BibleAquifer edition)** | Brown-Driver-Briggs Aramaic Lexicon as an Aquifer resource, covering the Aramaic portions of the Hebrew Bible, with resource-level and article-level metadata beside the content. Companion to the BibleAquifer BDB Hebrew edition and built from the same sources and production pipeline. | CC0 — public domain | JSON, Markdown, DOCX, PDF | [BibleAquifer/BDBAramaicLexicon](https://github.com/BibleAquifer/BDBAramaicLexicon) |
 
 ---
 
@@ -249,6 +251,15 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 | **Berean Standard Bible (BSB)** | Modern English translation, freely usable, widely adopted as a quoting base for translation notes and study resources. This repository carries it as per-book USFM with \\s1 section headings — editorial pericope boundaries for all 66 books, which few free texts provide. | Public domain | USFM, USJ, USX, TXT | [berean.bible](https://berean.bible/downloads.htm) · `Download from https://berean.bible/downloads.htm` |
 | **Berean Reader's Bible** | A reader's edition of the Berean text, set without verse numbers for continuous reading. | Public domain | TXT, XLSX, DOCX, PDF | [readersbible.com](https://readersbible.com/) · `Download from https://berean.bible/downloads.htm` |
 | **Berean Literal Bible NT** | A literal English rendering of the Greek New Testament, following Greek word order closely. Useful as a gloss layer beside the original. | Public domain | TXT, XLSX, DOCX, PDF | [literalbible.com](https://literalbible.com/) · `Download from https://berean.bible/downloads.htm` |
+
+---
+
+## 21. Images & Maps
+
+| Name | Description | License | Format | Get It |
+|---|---|---|---|---|
+| **Bible Image Library** | Curated Bible images and maps, organised into collections, for teaching, translation work, ministry and personal study. Serves the finished images produced in Open Bible Images. Run in partnership with The Seed Company, SIL International, Biblica, the NIDA Institute, and Open Bible Images. Browsing is open; contributing requires an account and a contributor request. | Freely licensed — mostly Creative Commons, with a variety of free licenses accepted; check the individual image | web | [www.bibleimagelibrary.org](https://www.bibleimagelibrary.org/) · `Browse at https://www.bibleimagelibrary.org/` |
+| **Open Bible Images** | Production environment for AI-generated biblical images; finished images are served by the Bible Image Library. Images are browsed and searched by passage or topic and gathered into collections. The site is open to anyone; signing in adds functionality for reviewers and for people helping with image production. | Freely licensed — mostly Creative Commons, with a variety of free licenses accepted; check the individual image | web | [openbibleimages.org](https://openbibleimages.org/) · `Browse at https://openbibleimages.org/` |
 ---
 
 ## Contributing

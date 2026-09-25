@@ -929,18 +929,32 @@
     "notes": "Last updated 2023-03-20."
   },
   {
-    "id": "bdb-hebrewlexicon",
-    "name": "BDB (OpenScriptures HebrewLexicon)",
+    "id": "bibleaquifer-bdb-hebrew",
+    "name": "BDB Hebrew Lexicon (BibleAquifer edition)",
     "category": "Lexicons",
-    "description": "Brown-Driver-Briggs Hebrew and English Lexicon, marked up in XML with links to Strong's numbers and an augmented index. The standard historical Hebrew lexicon.",
-    "formats": ["XML"],
-    "license": "No license file — see repo",
-    "github": "https://github.com/openscriptures/HebrewLexicon",
+    "description": "Brown-Driver-Briggs Hebrew Lexicon as an Aquifer resource, with resource-level and article-level metadata beside the content. Derived from three open digitizations: James Cuénod's HTML edition as the primary text, OpenScriptures for root-section identification and article alignment, and the unfoldingWord/SIL edition for Unicode transcriptions of Arabic, Syriac, Ethiopic, Persian and Samaritan words that were images in the primary source. Internal vide cross-references are resolved and linked, Bible references carry machine-readable data-verses encoding, and abbreviations are tagged against the lexicon's own abbreviation list.",
+    "formats": ["JSON", "Markdown", "DOCX", "PDF"],
+    "license": "CC0 — public domain",
+    "github": "https://github.com/BibleAquifer/BDBHebrewLexicon",
     "url": null,
     "acquire": [
-      "git clone https://github.com/openscriptures/HebrewLexicon"
+      "git clone https://github.com/BibleAquifer/BDBHebrewLexicon"
     ],
-    "notes": ""
+    "notes": "Replaces the OpenScriptures HebrewLexicon entry, removed 2026-09-25 as superseded — that XML is one of this edition's three sources and remains at https://github.com/openscriptures/HebrewLexicon. Content is under eng/ in json, md, docx and pdf, with an alignments directory and metadata.json. JSON is the source format — the others are generated from it, so issues and PRs go against the JSON. Editions whose provenance points to a BibleSoft-licensed text were deliberately excluded upstream. Articles present only in OpenScriptures or unfoldingWord/SIL are excluded pending human review."
+  },
+  {
+    "id": "bibleaquifer-bdb-aramaic",
+    "name": "BDB Aramaic Lexicon (BibleAquifer edition)",
+    "category": "Lexicons",
+    "description": "Brown-Driver-Briggs Aramaic Lexicon as an Aquifer resource, covering the Aramaic portions of the Hebrew Bible, with resource-level and article-level metadata beside the content. Companion to the BibleAquifer BDB Hebrew edition and built from the same sources and production pipeline.",
+    "formats": ["JSON", "Markdown", "DOCX", "PDF"],
+    "license": "CC0 — public domain",
+    "github": "https://github.com/BibleAquifer/BDBAramaicLexicon",
+    "url": null,
+    "acquire": [
+      "git clone https://github.com/BibleAquifer/BDBAramaicLexicon"
+    ],
+    "notes": "Same layout as the Hebrew edition: content under eng/ in json, md, docx and pdf, plus alignments and metadata.json. JSON is the source format and the others are generated from it."
   },
   {
     "id": "bsb",
@@ -1028,5 +1042,33 @@
       "Download from https://berean.bible/downloads.htm"
     ],
     "notes": "Published only as DOCX and PDF — there is no plain-text or structured release, so machine use means extracting from the DOCX."
+  },
+  {
+    "id": "bible-image-library",
+    "name": "Bible Image Library",
+    "category": "Images & Maps",
+    "description": "Curated Bible images and maps, organised into collections, for teaching, translation work, ministry and personal study. Serves the finished images produced in Open Bible Images. Run in partnership with The Seed Company, SIL International, Biblica, the NIDA Institute, and Open Bible Images. Browsing is open; contributing requires an account and a contributor request.",
+    "formats": ["web"],
+    "license": "Freely licensed — mostly Creative Commons, with a variety of free licenses accepted; check the individual image",
+    "github": null,
+    "url": "https://www.bibleimagelibrary.org/",
+    "acquire": [
+      "Browse at https://www.bibleimagelibrary.org/"
+    ],
+    "notes": "No bulk download or API is published; images are obtained through the web interface."
+  },
+  {
+    "id": "open-bible-images",
+    "name": "Open Bible Images",
+    "category": "Images & Maps",
+    "description": "Production environment for AI-generated biblical images; finished images are served by the Bible Image Library. Images are browsed and searched by passage or topic and gathered into collections. The site is open to anyone; signing in adds functionality for reviewers and for people helping with image production.",
+    "formats": ["web"],
+    "license": "Freely licensed — mostly Creative Commons, with a variety of free licenses accepted; check the individual image",
+    "github": null,
+    "url": "https://openbibleimages.org/",
+    "acquire": [
+      "Browse at https://openbibleimages.org/"
+    ],
+    "notes": "Anyone can browse. Reviewers and image-production contributors get additional functionality when logged in."
   }
 ]
