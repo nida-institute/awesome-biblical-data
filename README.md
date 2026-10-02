@@ -75,7 +75,7 @@ The machine-readable version of this catalog is [`resources.json`](resources.jso
 |---|---|---|---|---|
 | **Rahlfs-Hanhart LXX** | The standard critical edition of the Septuagint. Deutsche Bibelgesellschaft. Not freely downloadable as a standalone file; available via Logos/Faithlife or paired with CATSS morphological data. | See source | text | `Via Logos/Faithlife or CATSS` |
 | **CATSS LXX Morphology** | Computer-Assisted Tools for Septuagint Studies morphological text. Not freely licensed — see user agreement before use. | Restricted — see http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/0-user-declaration.txt | plain text | [ccat.sas.upenn.edu](http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/) · `See user agreement and request access from http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/` |
-| **Swete's Septuagint** | Machine-corrected version. Morphological tagging in progress. | Open | XML | [OpenGreekAndLatin/septuagint-dev](https://github.com/OpenGreekAndLatin/septuagint-dev) |
+| **Swete's Septuagint** | The Old Testament in Greek According to the Septuagint, edited by Henry Barclay Swete. One plain-text file per book, derived from the Open Greek and Latin First1KGreek text (tlg0527). | CC BY-SA 4.0 (text); MIT (build code) | plain text | [nathans/lxx-swete](https://github.com/nathans/lxx-swete) · `Files: data/*.txt` |
 
 ---
 

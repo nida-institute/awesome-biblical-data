@@ -171,15 +171,16 @@
     "id": "swete-lxx",
     "name": "Swete's Septuagint",
     "category": "Septuagint (LXX)",
-    "description": "Machine-corrected version. Morphological tagging in progress.",
-    "formats": ["XML"],
-    "license": "Open",
-    "github": "https://github.com/OpenGreekAndLatin/septuagint-dev",
+    "description": "The Old Testament in Greek According to the Septuagint, edited by Henry Barclay Swete. One plain-text file per book, derived from the Open Greek and Latin First1KGreek text (tlg0527).",
+    "formats": ["plain text"],
+    "license": "CC BY-SA 4.0 (text); MIT (build code)",
+    "github": "https://github.com/nathans/lxx-swete",
     "url": null,
     "acquire": [
-      "git clone https://github.com/OpenGreekAndLatin/septuagint-dev"
+      "git clone https://github.com/nathans/lxx-swete",
+      "Files: data/*.txt"
     ],
-    "notes": ""
+    "notes": "Replaces OpenGreekAndLatin/septuagint-dev as the Swete source. The README leaves the file format undocumented."
   },
   {
     "id": "macula-hebrew",
